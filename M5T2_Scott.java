@@ -8,7 +8,7 @@ public class Main {
     System.out.println("TODO: greet the user");
     Scanner keyboard = new Scanner (System.in);
 
-    System.out.println("What'syour name?");
+    System.out.println("What's your name?");
 
     String name;
     name = keyboard.nextLine();
