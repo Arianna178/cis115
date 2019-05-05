@@ -1,0 +1,97 @@
+import java.util.Scanner;
+
+public class Main {
+
+public static void customerName() {
+    // ask for user name 
+    //say hi to them by name 
+    //System.out.println("TODO: greet the user");
+    Scanner keyboard = new Scanner (System.in);
+
+    System.out.println("What's your name");
+
+    String name;
+    name = keyboard.nextLine();
+    System.out.println("Hello, "+ name);
+  }
+
+  public static void mealCost() {
+    // ask for number 
+    System.out.println("Enter the cost of the meal?");
+       Scanner keyboard = new Scanner(System.in);
+      double mealCost; 
+      mealCost = keyboard.nextInt();
+      //meal with tax
+      System.out.println (mealCost + 1.05) ;
+
+  }
+
+  public static void tipPct() {
+    // ask for a number 
+    System.out.println("What is the tip percent?");
+    Scanner keyboard = new Scanner(System.in);
+      double tipPct; 
+     tipPct = keyboard.nextInt();
+     // print that value out
+     System.out.println(tipPct / 100); 
+    //System.out.println("TODO: take ten percent");
+  }
+public static void taxCost() {
+    System.out.println(1 + .05);
+    double taxCost; 
+    //System.out.println("TODO: find taxCost");
+}
+public static void tipCost() {
+    System.out.println( "mealCost + tipPct");
+    double tipCost;
+}
+public static void Receipt(){
+System.out.println("Thank you, customerName");
+
+
+}
+  public static void main(String[] args) {
+  
+    System.out.println(" Welcome to the Menu");
+    System.out.println("--------------------");
+    System.out.println("1. Greetings");
+    System.out.println("2. meal cost");
+    System.out.println("3. tipPct");
+    System.out.println("4. taxCost ");
+    System.out.println("5. tipCost");
+    System.out.println("6. Receipt");
+
+    // ask user to input menuChoice
+    Scanner keyboard = new Scanner(System.in);
+    int menuChoice = keyboard.nextInt();
+
+
+  
+     if (menuChoice == 1) 
+    {
+      customerName();
+    }
+    else if (menuChoice == 2)
+    {
+      mealCost();
+    }
+    else if (menuChoice == 3)
+    {
+      tipPct();
+  
+    }
+    else if ( menuChoice == 4)
+    { 
+        taxCost (); 
+    }
+    else if (menuChoice == 5) 
+    {
+      tipCost();
+      
+    }
+   else if (menuChoice == 6)
+   {
+     Receipt();
+   }
+  } //Main 
+} // Class
