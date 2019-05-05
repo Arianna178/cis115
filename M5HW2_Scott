@@ -1,0 +1,95 @@
+import java.util.Scanner;
+public class Main
+{
+
+  public static void greetUser()
+  {
+    // ask for user name
+    //say hi to them by name
+    System.out.println("TODO: greet the user");
+    Scanner keyboard = new Scanner (System.in);
+
+    System.out.println("What's your name?");
+
+    String name;
+    name = keyboard.nextLine();
+    System.out.println("Hello, " + name);
+
+  }
+
+  public static void doubleNumber() 
+  {
+    // ask for number
+    System.out.println("Enter a number");
+    Scanner keyboard = new Scanner(System.in);
+    int num = keyboard.nextInt() ;
+        
+    //double it
+    //num = num * 2; 
+
+    // print that out
+    System.out.println(num = num * 2);  
+   
+   //System.out.println("TODO: double a number");
+    
+  }
+
+  public static void takeTenPercent()
+  {
+    //ask for a number
+    System.out.println("Enter a number");
+    Scanner keyboard = new Scanner(System.in);
+    int num = keyboard.nextInt() ;
+
+    // find out 10% of that number
+    //num = num / 10; 
+
+    //print that value out
+    System.out.println( num = num / 10 ); 
+    //System.out.println("TODO: take TenPercent");
+  }
+ 
+
+  public static void main(String[] args)
+  {
+    // this program is an ATM Simulator
+    // you can add money, withdraw, and check your balance
+    System.out.println("Welcome to the Menu");
+    System.out.println("--------------------");
+    System.out.println("1. Greetings");
+    System.out.println("2. Double the number");
+    System.out.println("3. Take 10%");
+    System.out.println("4. Gross Pay");
+    System.out.println("5.End Program");
+
+    // ask user to input menuChoice
+    Scanner keyboard = new Scanner(System.in);
+    int menuChoice = keyboard.nextInt();
+
+    if (menuChoice == 1) 
+    {
+      greetUser();
+    }
+    else if (menuChoice == 2)
+    {
+      doubleNumber();
+    }
+    else if (menuChoice == 3) 
+    {
+      takeTenPercent();
+    }
+    else if  (menuChoice == 4)
+    {
+      //grossPay();
+
+    }
+    else if (menuChoice == 5)
+    {
+      System.out.println("TODO: End Program");
+    }
+    
+
+  } // end of main
+
+  
+} // end of class
